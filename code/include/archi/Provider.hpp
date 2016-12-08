@@ -10,6 +10,8 @@ class Provider : public virtual Module{
 		
 	protected:
 		void set(std::string name, T value){
+
+		std::cout<<"set "<<name<<std::endl;
 			m_values[name] = value;
 		}
 

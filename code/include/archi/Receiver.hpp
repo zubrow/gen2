@@ -33,6 +33,7 @@ public:
 
 protected:
 	T get(std::string name){
+		std::cout<<"get "<<name<<std::endl;
 		return m_providers[name].first->get(m_providers[name].second);
 	}
 
